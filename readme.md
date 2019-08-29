@@ -1,1 +1,1 @@
-An experimental pet project replicating the base idea of a piece of malware I heard about in a talk at BSides Sydney. Still pretty goofy (and very vulnerable since I know jack all C) but it compiles, which is nice
+An experimental pet project replicating the base idea of a piece of malware I heard about in a talk at BSides Sydney. Still pretty goofy (and very vulnerable since I know jack all C) but it compiles and works, which is nice
