@@ -1,1 +1,1 @@
-An experimental pet project replicating the base idea of a piece of malware I heard about in a talk at BSides Canberra 2019. Still pretty goofy (and very vulnerable since I know jack all C) but it compiles and works, which is nice
+An experimental pet project replicating the base idea of a piece of malware I heard about in a talk at BSides Canberra 2019. Still pretty goofy (and vulnerable to a buffer overflow if using ipv6 because I know jack all C) but it compiles and works, which is nice
